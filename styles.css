@@ -1,0 +1,355 @@
+:root {
+  --p-font: 'Nanum Gothic Coding', monospace;
+}
+
+body {
+  margin: 0;
+    background-color: #746f7e;
+}
+
+iframe{
+    background-image: url(warning.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.studentlist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 0px 50px 0px 50px;
+}
+
+/*header start*/
+
+.header img{
+    width: 100%;
+    height: 40vw;
+    padding: 0;
+}
+
+.header h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 20vw;
+    font-size: 5rem;
+    color: white;
+    text-decoration: underline;
+}
+
+.dropdowns {
+  text-align: center;
+    font-size: 2rem;
+    background-color: antiquewhite;
+    padding-top: 2vw;
+
+}
+
+#filter-by{
+    height: 1.5vw;
+    font-size: 1.5rem;
+    margin-right: 50px;
+}
+#sort-by{
+    height: 1.5vw;
+    font-size: 1.5rem;
+}
+
+/*header slut*/
+
+/*counter start*/
+.counter {
+  text-align: center;
+    background-color: antiquewhite;
+}
+
+.counter button {
+  height: 4vh;
+  width: 19vw;
+    font-size: 1.5rem;
+}
+
+.counter button:hover {
+  width: 20vw;
+  height: 4.5vh;
+  font-size: 1.4em;
+}
+
+.count-house {
+  display: flex;
+  justify-content: space-evenly;
+}
+.count-house p {
+    padding-top: 3.5vw;
+    font-size: 1.5rem;
+}
+.gryf{
+   margin-left: -4vw;
+    padding-bottom: 2vw;
+}
+.count-house p:last-child {
+  border-right: none;
+}
+
+.count-exp {
+  font-size: 1.2em;
+    margin-bottom: 30px;
+}
+.count-stud {
+  font-size: 1.5em;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/*counter slut*/
+
+
+/*main start*/
+h2 {
+  font-family: var(--p-font);
+  font-weight: 700;
+}
+p {
+  font-family: var(--p-font);
+}
+
+.student {
+  margin: 30px;
+  text-align: center;
+  border-radius: 8px;
+    background-color: white;
+    border-radius: 30px;
+transition: 800ms linear;
+}
+
+.info{
+    font-size: 1.5rem;
+    height: 2vw;
+}
+.expell{
+    font-size: 1.5rem;
+    height: 2vw;
+}
+
+.info:hover{
+    font-size: 1.5rem;
+    height: 2vw;
+}
+.expell:hover{
+    font-size: 1.5rem;
+    height: 2vw;
+}
+/*main slut*/
+
+/*popup start*/
+#popup {
+  width: 30vw;
+    height: 30vw;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.prefect{
+    font-size: 1.5rem;
+    height: 2vw;
+}
+.squad{
+    font-size: 1.5rem;
+    height: 2vw;
+}
+
+.prefect:hover{
+    font-size: 1.5rem;
+    height: 2vw;
+}
+.squad:hover{
+    font-size: 1.5rem;
+    height: 2vw;
+}
+
+.blood{
+    font-size: 1.5rem;
+}
+
+.gender{
+   font-size: 1.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+#content {
+  border-radius: 10px;
+}
+
+.text-content {
+  left: 40vw;
+}
+
+.crest {
+  width: 100%;
+  text-align: center;
+}
+
+.crest img {
+  height: 150px;
+}
+
+#close-popup {
+  font-size: 4em;
+  z-index: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.close-list {
+  font-size: 3rem;
+  color: black;
+  cursor: pointer;
+  padding-right: 40px;
+  position: fixed;
+  top: 1vw;
+  right: 6px;
+}
+
+.hide {
+  display: none;
+}
+
+
+img {
+  height: 150px;
+  padding-top: 20px;
+}
+
+.gryffindor {
+  background-color: white;
+    border: solid red 30px;
+}
+.ravenclaw {
+  background-color: white;
+    border: solid blue 30px;
+}
+.slytherin {
+  background-color: white;
+    border: solid green 30px;
+}
+.hufflepuff {
+  background-color: white;
+    border: solid yellow 30px;
+}
+
+button {
+  height: 20px;
+  margin: 0px 10px 10px 10px;
+  border-radius: 5px;
+  box-shadow: 5px 2px 4px 1px rgba(128, 128, 128, 0.47);
+  cursor: pointer;
+}
+
+
+button:hover {
+  height: 22px;
+  font-size: 0.8em;
+}
+/*popup slut*/
+
+/*udvist liste start*/
+
+.expell {
+  background-color: rgba(195, 88, 88, 0.88);
+}
+
+.list {
+  width: 50vw;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  overflow: scroll;
+  background-color: white;
+  grid-template-columns: 1fr 1fr;
+    border: solid;
+}
+
+.list h1 {
+  text-align: center;
+  grid-area: 1 / span 2;
+    font-size: 2rem;
+}
+
+.green {
+  background-color: rgb(235, 89, 89);
+  cursor: pointer;
+}
+
+.student-expelled {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  text-align: right;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-bottom: 1px black solid;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+.student-expelled:last-child {
+  border-bottom: none;
+}
+
+.student-expelled h1 {
+  text-align: right;
+}
+
+.not-allowed {
+  background-color: red;
+  cursor: initial;
+}
+.not-allowed:hover {
+  height: 20px;
+  font-size: 11px;
+}
+.removeprefect {
+  background-color: green;
+}
+
+.remove {
+  opacity: 0;
+}
+
+.remove-list {
+  display: none;
+}
+/*udvist liste slut*/
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1000px){
+
+    .studentlist {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 0px 50px 0px 50px;
+}
+
+}
+@media screen and (max-width: 600px){
+
+    .studentlist {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  margin: 0px 50px 0px 50px;
+}
+
+}

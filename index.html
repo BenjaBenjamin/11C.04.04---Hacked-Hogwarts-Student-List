@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elevliste</title>
+    <link rel="stylesheet" href="styles.css" />
+      <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="remove-all">
+      <div class="header">
+           <h1>Hogwarts Elevliste</h1>
+          <img src="img/hogwarts_5k.jpg" alt="hogwarts">;
+         <div class="dropdowns">
+            <label for="#filter-by">Filter:</label>
+          <select id="filter-by">
+            <option class="option" value="All">Vis alle</option>
+            <option class="option" value="Hufflepuff">Hufflepuff</option>
+            <option class="option" value="Gryffindor">Gryffindor</option>
+            <option class="option" value="Ravenclaw">Ravenclaw</option>
+            <option class="option" value="Slytherin">Slytherin</option>
+          </select>
+
+          <label for="#sort-by">Sorter efter:</label>
+          <select id="sort-by">
+            <option value="Firstname">Fornavn</option>
+            <option value="Lastname">Efternavn</option>
+            <option value="House">Hus</option>
+          </select>
+        </div>
+      </div>
+      <div class="wrapper">
+
+
+        <div class="counter">
+          <p class="count-stud"></p>
+          <button class="count-exp"></button>
+          <div class="count-house">
+            <p class="count-gryffindor"></p>
+              <img src="img/gryffindorcrest.png" class="gryf">
+            <p class="count-slytherin"></p>
+              <img src="img/slytherincrest.png" class="gryf">
+            <p class="count-hufflepuff"></p>
+              <img src="img/hufflepuffcrest.png" class="gryf">
+            <p class="count-ravenclaw"></p>
+              <img src="img/ravenclawcrest.png" class="gryf">
+          </div>
+        </div>
+
+        <div class="list hide"></div>
+
+        <div id="popup" class="hide">
+          <div id="close-popup">x</div>
+          <div id="content">
+            <img src="" alt="" />
+            <h1></h1>
+            <div class="text-content">
+              <h2></h2>
+              <p class="gender"></p>
+              <p class="blood"></p>
+            </div>
+            <button class="prefect">Tilføj til præfekten</button>
+            <button class="squad">Tilføj til de inkvisitoriske</button>
+            <div class="crest"><img src="" alt="" /></div>
+          </div>
+        </div>
+
+        <template>
+          <div class="student" house="">
+            <img src="" alt="" />
+            <h2></h2>
+            <h3></h3>
+            <button class="info">Se mere</button>
+            <button class="expell" data-action="remove">Udvis</button>
+          </div></template>
+        <div class="studentlist"></div>
+      </div>
+    </div>
+    <iframe
+      class="hide"
+      width="1000"
+      height="1000"
+      allowfullscreen
+    ></iframe>
+    <script src="script.js"></script>
+  </body>
+</html>
